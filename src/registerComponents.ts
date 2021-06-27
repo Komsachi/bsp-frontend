@@ -1,9 +1,10 @@
 import {AppLink} from "@/components/common";
 import {App} from "vue";
 
+export {AppLink};
 
-const registerComponents = (app: App) => {
-    app.component('AppLink', AppLink)
+export default {
+    install(Vue: App) {
+        Vue.component('AppLink', AppLink);
+    }
 }
-
-export default registerComponents
