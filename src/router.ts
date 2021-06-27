@@ -1,20 +1,12 @@
 import { createWebHistory, createRouter } from "vue-router";
 
-// 1. Define route components.
-// These can be imported from other files
-const Home = { template: '<div>Home</div>' }
-const About = { template: '<div>About</div>' }
+import HelloWorld from "@/components/HelloWorld.vue";
 
 const routes = [
     {
         path: "/",
         name: "Home",
-        component: Home,
-    },
-    {
-        path: "/about",
-        name: "About",
-        component: About,
+        component: HelloWorld,
     },
 ];
 
